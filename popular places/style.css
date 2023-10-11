@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 40px 150px;
+    width: 100%;
+    height: 100vh;
+    background-color: #676767;
+}
+.first{
+    width: 100%;
+    height: 40vh;
+    padding-right: 10px;
+    display: flex;
+    margin-bottom: 20px;
+}
+.second{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+}
+.first .photo{
+    height: 100%;
+    width: 45%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.first .description{
+    height: 100%;
+    width: 55%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #575656;
+}
+.second .photo{
+    height: 100%;
+    width: 60%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.second .description{
+    height: 100%;
+    width: 40%;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #575656;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.description h1{
+    font-weight: 700;
+    color: #e0e0e0df;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.description p{
+    font-size: 17px;
+    color: #fff;
+}
+.photo img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
