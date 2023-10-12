@@ -4,7 +4,64 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-html { 
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #414141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: #646464;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.loading-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  z-index: 10000;
+  color: #646464;
+  font-size: 30px;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#svg {
+  width: 150px;
+  height: 150px;
+  stroke: #fff;
+  fill-opacity: 0;
+  stroke-width: 5px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease-in-out;
+}
+.logo-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #646464;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+html {
   scroll-behavior: smooth;
 }
 body {
